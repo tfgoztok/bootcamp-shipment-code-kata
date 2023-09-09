@@ -7,7 +7,7 @@ public class Basket {
     private List<Product> products;
 
     public ShipmentSize getShipmentSize() {
-        return null;
+        return new BasketShipmentManager(this).getBasketShipmentSize();
     }
 
     public List<Product> getProducts() {
